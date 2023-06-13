@@ -1,30 +1,122 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://kit.fontawesome.com/e23d6b11e3.js" crossorigin="anonymous"></script>
-</head>
-<body>
-  <div class="container">
-    <form action="">
-      <div class="success-right"> <img class="svg" src="illustration-sign-up-desktop.svg" alt=""></div>
-      <h1 class="success">Stay updated!</h1>
-      <p class="success">Join 60,000 product managers recieving monthly update on:</p>
-      <div class="success"> <img src="icon-list.svg" alt="an svg"> <span class="trying"> Product discovery and building what matters</span></div>
-      <div class="success"> <img src="icon-list.svg" alt="an svg"> <span class="trying">Measuring to ensure updates are a success</span></div>
-      <div class="success"> <img src="icon-list.svg" alt="an svg"> <span class="trying">And much more! </span></div>
-      <div class="emailbox">
-        <input type="email" name="" value="" placeholder="email@company.com" class="tbox">
-
-        <button type="button" name="button" class="btn">Subscribe to monthly newsletter</button>
-      </div>
-    </form>
-    
-  </div>
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat", sans-serif;
   
-</body>
-</html>
+}
+body{
+  background-color:  hsl(235, 18%, 26%);
+  font-size: 16px;
+  font-family: "roboto" , Arial, Helvetica, sans-serif;
+  font-weight: 400, 700;
+}
+.container{
+  background-color: hsl(0, 0%, 100%);
+  padding: 100px 40px;
+  text-align: center;
+  width: 600px;
+  padding: 40px;
+  border: 5px solid gray;
+  margin:80px auto;
+  border-radius: 25px;
+  height: calc(100vh - 250px);
+
+}
+.success{
+  display: flex;
+  align-items: flex-start; 
+  line-height: 2.0;
+}
+
+.success:nth-child(2){
+  line-height: 5.0;
+}
+.trying{
+  display: flex;
+  padding-left: 10px;
+}
+/*
+.container .leftside{
+  position: relative;
+  flex: 30%;
+  background: #fff; 
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.container .success-right{
+  position: relative;
+  flex: 70%;
+  background: #e5ddd5;
+  
+}
+.container .success-right::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0px;
+}
+*/
+.success-right{
+  
+  height: 10px;
+}
+.svg{
+  border: black;
+  width: 40%; 
+  height: 500px;
+  float: right;
+  padding-bottom: 300px;
+}
+form{
+  background-color: hsl(0, 0%, 100%);
+  /*max-width: 600px;*/
+  margin: 0px auto;
+  font-size: 13px;
+  font-weight: 400, 700;
+}
+/*
+.emailbox{
+  height: 40px;
+  display: flex;
+  justify-content: center;
+
+}
+*/
+.tbox, .btn{
+  display: grid;
+  border: none;
+  outline: none;
+
+}
+.tbox{
+  display: flex;
+  width: 200px;
+  margin: 20px;
+  padding: 0 10px;
+  position: relative;
+  
+}
+.tbox[type="email"] {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  
+}
+
+.btn{
+  background:  hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+  padding: 10px 20px;
+  display: flex;
+  margin: 20px;
+  margin-left: 105px;
+  cursor: pointer;
+  transform: translateX(-50%);
+  top: 100%;
+  left: 50%;
+  border: none;
+  border-radius: 4px;
+}
